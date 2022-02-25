@@ -1,0 +1,10 @@
+<div class="posts-list wrapper">
+  <h2 class="posts-list__title">{{ 'homepage.sections.news_title' | t %}}</h2>
+  <ul class="posts-list__grid">
+  {% for article in blogs['news'].articles limit: 9 offset: 1 %}
+    <li class="posts-list__grid-item">
+      {% include 'post-card' %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>

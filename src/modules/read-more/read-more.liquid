@@ -1,0 +1,9 @@
+<a class="read-more" href="{{ article.url }}">
+  {% if article.tags contains 'Video' %}
+    {{ 'blogs.article.watch_video' | t }}
+  {% elsif article.tags contains 'Gallery' %}
+    {{ 'blogs.article.view_gallery' | t }}
+  {% else %}
+    {{ 'blogs.article.read_more' | t }}
+  {% endif %}
+</a>

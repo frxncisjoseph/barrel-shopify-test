@@ -1,0 +1,24 @@
+<div class="top-up-module__background"></div>
+
+<div class="top-up-module">
+    <div class="top-up-module__image">
+        <img src="{{ section.settings.topupmodule_article.image | img_url: 'master' }}">
+    </div>
+    <div class="top-up-module__article">
+        <div class="article__icon">
+            <i class="fas-icon"></i>
+        </div>
+        <div class="article__timestamp">
+            {{ section.settings.topupmodule_article.published_at | date: "%B %d" }}
+        </div>
+        <div class="article__title">
+            {{ section.settings.topupmodule_article.title }}
+        </div>
+        <div class="article__excerpt">
+            <p>{{ section.settings.topupmodule_article.excerpt }}</p>
+        </div>
+        <div class="article__cta">
+            <a href="{{ section.settings.topupmodule_article.url }}">Read More</a>
+        </div>
+    </div>
+</div>

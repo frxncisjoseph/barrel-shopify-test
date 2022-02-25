@@ -1,0 +1,36 @@
+{% include 'hero' %}
+
+{% schema %}
+{
+  "name": "Hero",
+  "class": "section",
+  "settings": [
+      {
+        "type": "image_picker",
+        "id": "hero_background_image",
+        "label": "Hero Background Image"
+      },
+      {
+        "type": "text",
+        "id": "hero_headline_text",
+        "label": "Hero Headline Text"
+      },
+      {
+        "type": "richtext",
+        "id": "hero_main_text",
+        "label": "Hero Main Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero_image",
+        "label": "Hero Image"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Hero",
+      "category": "Layout"
+    }
+  ]
+}
+{% endschema %}

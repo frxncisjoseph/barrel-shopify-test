@@ -1,0 +1,25 @@
+.post-icon {
+  color: var(--wellRead);
+  fill: currentColor;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+  height: 20px;
+
+  svg,
+  symbol {
+    circle,
+    ellipse,
+    g,
+    line,
+    path,
+    polygon,
+    polyline,
+    rect {
+      fill: inherit;
+      stroke: inherit;
+    }
+  }
+}
+

@@ -1,0 +1,21 @@
+.social-links__item {
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  a {
+    display: block;
+    color: var(--mongoose);
+
+    &:hover,
+    &:focus {
+      color: var(--white);
+    }
+  }
+
+  svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+  }
+}

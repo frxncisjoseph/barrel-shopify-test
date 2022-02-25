@@ -1,0 +1,26 @@
+<div class="post-card">
+  <a class="block" href="{{ article.url }}">
+    {% capture srcset %}
+      {{ article.image | img_url: '360x334', crop: 'center' }} 360w,
+      {{ article.image | img_url: '540x501', crop: 'center' }} 540w
+      {% comment %}
+      {{ article.image | img_url: '720x668', crop: 'center' }} 720w,
+      {{ article.image | img_url: '900x835', crop: 'center' }} 900w
+      {% endcomment %}
+    {% endcapture %}
+    <div class="post-card__image-container box ratio-container">
+      <i class="img__loader--alt"></i>
+      <img class="post-card__image lazyload"
+        src="{{ article.image | img_url: '300x278', crop: 'center' }}"
+        srcset="{{ srcset }}"
+        sizes="auto"
+        alt="{{ article.title }}">
+    </div>
+  </a>
+  <div class="post-card__meta">
+    <div class="post-card__icon">{% include 'post-icon' %}</div>
+    <time class="post-card__date" datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%B %d' }}</time>
+    <h3 class="post-card__title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+    {% include 'read-more' %}
+  </div>
+</div>

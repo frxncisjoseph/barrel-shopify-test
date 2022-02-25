@@ -1,0 +1,15 @@
+production:
+  theme_id: <theme-id>
+  api_key: <api-key>
+  password: <password>
+  store: <store.myshopify.com>
+staging:
+  theme_id: <theme-id>
+  api_key: <api-key>
+  password: <password>
+  store: <store.myshopify.com>
+development:
+  theme_id: 129124106403
+  api_key: 5e2bff82da81644d7d9d0dedea6d445e
+  password: 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
+  store: barrell-test-francis.myshopify.com

@@ -1,0 +1,68 @@
+.counter {
+  position: relative;
+  white-space: nowrap;
+  border: 1px solid #000;
+  width: 90px;
+  height: 40px;
+  background-color: inherit;
+  color: inherit; }
+  .counter input[type="number"] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    border: 0;
+    width: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+    text-align: center; }
+    .counter input[type="number"]::-webkit-inner-spin-button, .counter input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+              appearance: none; }
+  .counter button {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: 30px;
+    cursor: pointer;
+    -webkit-transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
+    outline: 0; }
+    .counter button[disabled] {
+      opacity: 0.3;
+      pointer-events: none; }
+      .counter button[disabled]:hover::before {
+        opacity: 0; }
+    .counter button:focus::before {
+      opacity: 1; }
+    .counter button:first-child {
+      left: 5px; }
+    .counter button:last-child {
+      right: 5px; }
+    .counter button:hover::before {
+      opacity: 1; }
+    .counter button::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      margin: auto;
+      border-radius: 100px;
+      background: #e6e6e6;
+      opacity: 0;
+      -webkit-transition: opacity 200ms ease-in-out;
+      transition: opacity 200ms ease-in-out; }
+    .counter button span {
+      position: relative; }

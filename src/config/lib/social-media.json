@@ -1,0 +1,17 @@
+{
+  "name": "Social media",
+  "settings": [
+    {
+      "type": "text",
+      "id": "social_facebook_link",
+      "label": "Facebook link",
+      "info": "https:\/\/facebook.com\/shopify"
+    },
+    {
+      "type": "text",
+      "id": "social_twitter_link",
+      "label": "Twitter link",
+      "info": "https:\/\/twitter.com\/shopify"
+    }
+  ]
+}

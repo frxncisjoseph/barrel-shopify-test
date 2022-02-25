@@ -1,0 +1,15 @@
+.site-footer {
+  line-height: 1.1;
+  height: 78px;
+
+  @media (--s) {
+    height: 89px;
+  }
+}
+
+.site-footer__heading {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}

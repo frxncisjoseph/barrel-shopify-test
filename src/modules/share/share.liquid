@@ -1,0 +1,15 @@
+{% assign permalinkURL = shop.url %}
+{% assign shareTitle = shop.name %}
+
+<ul class="social-links f aic list--reset">
+  <li class="social-links__item">
+    <a target="_blank" href="//www.facebook.com/sharer.php?u={{ permalinkURL }}">
+      {% include 'icon' with 'icon-facebook' %}
+    </a>
+  </li>
+  <li class="social-links__item">
+    <a target="_blank" href="//twitter.com/share?text={{ shareTitle }}&amp;url={{ permalinkURL }}" class="share-twitter">
+      {% include 'icon' with 'icon-twitter' %}
+    </a>
+  </li>
+</ul>

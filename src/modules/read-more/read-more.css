@@ -1,0 +1,5 @@
+.read-more {
+  color: var(--wellRead);
+  font-weight: var(--f-weight-bold);
+  text-transform: capitalize;
+}

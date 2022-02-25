@@ -1,0 +1,16 @@
+{%- assign social_accounts = 'Facebook, Twitter' | split: ', ' -%}
+<ul class="social-links f aic list--reset">
+  {% for social in social_accounts %}
+    {%- assign social_handle = social | handleize  -%}
+    {% capture social_link %}social_{{ social_handle }}_link{% endcapture %}
+    {% capture social_icon %}icon-{{ social_handle }}{% endcapture %}
+
+    {% if settings[social_link] != blank %}
+      <li class="social-links__item">
+        <a href="{{ settings[social_link] }}">
+          {% include 'icon' with social_icon %}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

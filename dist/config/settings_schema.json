@@ -1,0 +1,144 @@
+[{
+  "name": "theme_info",
+  "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0818\/7193\/t\/7\/assets\/barrel-logo.png?18160900480179151251",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Barrel Base"
+    },
+    {
+      "type": "paragraph",
+      "content": "v1.0.0"
+    },
+    {
+      "type": "paragraph",
+      "content": "Check out [the repo](https://gitlab.com/barrel/barrel-shopify-base) for more information."
+    }
+  ]
+}
+,{
+  "name": "Logo and favicon",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Development"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_dev_mode",
+      "label": "Access site through BrowserSync?",
+      "default": true
+    },
+    {
+      "type": "image",
+      "id": "favicon.png",
+      "label": "Favicon",
+      "info": "Upload a 32x32 px PNG to use as your favicon."
+    },
+    {
+      "type": "header",
+      "content": "Logo settings"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_enabled",
+      "label": "Enable custom logo",
+      "info": "Use a logo image on your site.",
+      "default": true
+    },
+    {
+      "type": "image",
+      "id": "logo.png",
+      "label": "Logo",
+      "info": "440 x 200px .png (recommended). Note that your logo will display at 220 x 100px, but we recommend uploading an image twice as large as this for high-resolution displays."
+    },
+    {
+      "type": "checkbox",
+      "id": "use_mobile_logo",
+      "label": "Enable mobile logo",
+      "info": "Using a smaller logo on smaller screens is helpful if your full logo is very large or has a lot of detail. A smaller logo could be an abbreviated or simpler version of your full logo.",
+      "default": false
+    },
+    {
+      "type": "image",
+      "id": "logo--sm.png",
+      "label": "Logo - mobile",
+      "info": "340 x 140px .png (recommended). Note that this smaller logo will display at 170 x 70px on smaller screens, but we recommend uploading an image twice as large as this for high-resolution displays."
+    }
+  ]
+}
+,{
+  "name": "Newsletter",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "newsletter_prompt",
+      "label": "Newsletter prompt",
+      "default": "Sign up for our newsletter to be the first to know about new products, exclusive releases and promotions."
+    },
+    {
+      "type": "textarea",
+      "id": "newsletter_success",
+      "label": "Success Message",
+      "info": "If Mailchimp is enabled, this message will be ignored in favor of the response message from the Mailchimp servers.",
+      "default": "Thank you for signing up!"
+    },
+    {
+      "type": "textarea",
+      "id": "newsletter_error",
+      "label": "Error Message",
+      "default": "Whoops, something went wrong. If this issue persists, please <a href=\"/pages/contact\">contact us.</a>"
+    },
+    {
+      "type": "checkbox",
+      "id": "mailchimp_enabled",
+      "label": "Enable Mailchimp"
+    },
+    {
+      "type": "text",
+      "id": "mailchimp_url",
+      "label": "Mailchimp form action URL",
+      "info": "For more info on where to find this, check out [this post](https://help.shopify.com/themes/customization/communication/get-a-mailchimp-form-action-url)."
+    }
+  ]
+}
+
+,{
+  "name": "Promo Bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "promobar_enabled",
+      "label": "Enable"
+    },
+    {
+      "type": "textarea",
+      "id": "promobar_content",
+      "label": "Text Content",
+      "info": "Can contain HTML"
+    }
+  ]
+}
+,{
+  "name": "Social media",
+  "settings": [
+    {
+      "type": "text",
+      "id": "social_facebook_link",
+      "label": "Facebook link",
+      "info": "https:\/\/facebook.com\/shopify"
+    },
+    {
+      "type": "text",
+      "id": "social_twitter_link",
+      "label": "Twitter link",
+      "info": "https:\/\/twitter.com\/shopify"
+    }
+  ]
+}
+]

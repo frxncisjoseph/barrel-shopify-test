@@ -1,0 +1,13 @@
+<div class="hero" style="background-image: url({{ section.settings.hero_background_image | img_url: 'master' }});">
+    <div class="hero__content">
+        <div class="content__headline-text">
+            <h1 class="headline-text__content">{{ section.settings.hero_headline_text }}</h1>
+        </div>
+        <div class="content__main-text">
+            <p class="main-text__content">{{ section.settings.hero_main_text }}</p>
+        </div>
+    </div>
+    <div class="hero__image">
+        <img src="{{ section.settings.hero_image | img_url: '395x510' }}">
+    </div>
+  </div>
